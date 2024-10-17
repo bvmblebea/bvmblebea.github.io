@@ -58,7 +58,7 @@ footer {
 .skills {
   top: 165px;
   width: 165px;
-  position: fixed;
+  position: absolute;
   margin-left: 410px;
   margin-right: 300px;
   background: #000428;
@@ -68,7 +68,7 @@ footer {
 .sections {
   top: 460px;
   width: 165px;
-  position: fixed;
+  position: absolute;
   margin-left: 410px;
   margin-right: 300px;
   border-radius: 20px;
