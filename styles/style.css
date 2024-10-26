@@ -1,6 +1,7 @@
 html {
   font-size: 18px;
-  font-family: "Silkscreen", sans-serif;
+  font-family: "Nunito", sans-serif;
+  background: black;
 }
 
 body {
@@ -8,69 +9,99 @@ body {
   width: 420px;
   padding: 165px;
   overflow: hidden;
-  background: #000428;  /* fallback for old browsers */
-  background: -webkit-linear-gradient(to right, #004e92, #000428);  /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(to right, #004e92, #000428); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-}
-
-img.avatar {
-  width: 300px;
-  display: block;
-  border-radius: 50%;
-  margin-inline: auto;
 }
 
 h1, h2 {
-  color: whitesmoke;
+  background: linear-gradient(to bottom right, #00c0ff, #4218b8);
+  color: transparent;
+  background-clip: text;
   text-align: center;
-  letter-spacing: 3px;
+  letter-spacing: 4px;
 }
 
-
 p {
-  color: whitesmoke;
+  background: linear-gradient(to bottom right, #00c0ff, #4218b8);
+  color: transparent;
+  background-clip: text;
   text-align: center;
-  letter-spacing: 3px;
+  letter-spacing: 2px;
 }
 
 a {
-  color: whitesmoke;
+  background: linear-gradient(to bottom right, #00c0ff, #4218b8);
+  color: transparent;
+  background-clip: text;
 }
 
 div {
   width: 90%;
   padding: 8px;
+  display: block;
   text-align: center;
   margin-inline: auto;
-  border-radius: 5px;
-  border-width: thin;
-  background: #000428;  /* fallback for old browsers */
-  background: -webkit-linear-gradient(to right, #004e92, #000428);  /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(to right, #004e92, #000428); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  border-radius: 10px;
+  border-width: 3px;
+  border-style: solid;
+  box-sizing: border-box;
+  border-image: linear-gradient(to bottom right, #00c0ff, #4218b8) 1;
 }
 
 footer {
-  color: whitesmoke;
+  background: linear-gradient(to bottom right, #00c0ff, #4218b8);
+  color: transparent;
+  background-clip: text;
   padding: 5px;
   margin-inline: auto;
+  text-align: left;
+}
+
+
+.avatar {
+  width: 300px;
+  display: block;
+  border: double 0.2em transparent;
+  border-radius: 50%;
+  margin-inline: auto;
+  background-image: linear-gradient(white, white),
+    linear-gradient(to bottom right, #00c0ff, #4218b8);
+  background-origin: border-box;
+  background-clip: content-box, border-box;
 }
 
 .skills {
   top: 165px;
-  width: 165px;
+  width: 162px;
   position: absolute;
-  margin-left: 410px;
-  margin-right: 300px;
-  background: #000428;
-  border-radius: 20px;
+  margin-left: 399px;
+  border-image: linear-gradient(to bottom right, #4218b8, #00c0ff) 1;
 }
 
 .sections {
-  top: 460px;
-  width: 165px;
+  top: 450px;
+  width: 162px;
   position: absolute;
-  margin-left: 410px;
-  margin-right: 300px;
-  border-radius: 20px;
-  background: #000428;
+  padding: 20px;
+  margin-left: 399px;
+  border-image: linear-gradient(to top right, #4218b8, #00c0ff) 1;
+}
+
+.contributions {
+  top: 520px;
+  width: 162px;
+  position: absolute;
+  margin-left: 399px;
+  border-image: linear-gradient(
+      to bottom right,
+      #4218b8,
+      #00c0ff,
+      #4218b8,
+      #4218b8,
+      #00c0ff
+    )
+    1;
+}
+
+.contributions img {
+  height: 100%;
+  width: 100%;
 }
